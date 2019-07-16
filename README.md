@@ -16,7 +16,9 @@ The biggest question upon seeing the data is understanding the DOB which is in M
 <img src = "Images/picneginf_1.png" width = "200" />
 <img src = "Images/picneginf_2.png" width = "300"/>
 
-The other faces score were in a range between a little less than 1 and 8. Images with a face score of -inf look like the image shown below. As you can see, it is a very strange picture and very hard to see any face in it. 
+It is evident from these images, that images with face scores of -inf should be removed since no face image can even be discerned from these pictures. The other face score were in a range between a little less than 1 and 8. To get a better understanding of how the images change as the face scores change.
+
+<img src= "Images/facescores_table" width = "400"/>
 
 [some pic]
 
