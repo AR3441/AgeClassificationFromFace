@@ -16,10 +16,7 @@ The biggest question upon seeing the data is understanding the DOB which is in M
 <img src = "Images/picneginf_1.png" width = "200" />
 <img src = "Images/picneginf_2.png" width = "300"/>
 
-It is evident from these images, that images with face scores of -inf should be removed since no face image can even be discerned from these pictures. The other face score were in a range between a little less than 1 and 8. To get a better understanding of how the images change as the face scores change.
+It is evident from these images, that images with face scores of -inf should be removed since no face image can even be discerned from these pictures. The other face score were in a range between a little less than 1 and 8. To get a better understanding of how the images change as the face scores change, images with different face scores were looked at. So in the table of images below, the first row contains images with face scores between 0 and 1, the second row contains scores between 1 and 2, so on and so forth. 
 
-<img src= "Images/facescores_table" width = "400"/>
+<img src= "Images/facescores_table.png" width = "600"/>
 
-[some pic]
-
-The following shows pictures with the face scores increasing from the top row to the bottom row. The top row has face scores between 0 and 1, the second row has scores between 1 and 2, and so on. 
