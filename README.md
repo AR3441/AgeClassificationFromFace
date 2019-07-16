@@ -5,7 +5,9 @@ The goal of this project is to be able to classify age ranges by using a convolu
 ## Data
 The data used was from the IMDB-Wiki dataset which was created by Rasmus Rothe, Radu Timofte, and Luc Van Gool at the Computer Vision Lab at ETH Zurich. The original data set contains 524,230 images that were scraped from IMDB and Wikipedia websites. These images can be downloaded from https://data.vision.ee.ethz.ch/cvl/rrothe/imdb-wiki/.
 
-For this project, 85213 images were used to reduce the computational load of the project since there was also a time constraint. The images have metadata that describe when the image was taken, who the actor is in the photo, the actor's DOB, a full path, face score, and a second face score. 
+For this project, 85,213 images were used to reduce the computational load of the project due to time constraints. The images have metadata which describe when the image was taken as well as information about the actor in the photo such as the actor's DOB, a full path, face score, and a second face score. 
+
+
 
 ### Exporatory Data Analysis 
 
