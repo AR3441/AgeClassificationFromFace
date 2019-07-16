@@ -20,3 +20,9 @@ It is evident from these images, that images with face scores of -inf should be 
 
 <img src= "Images/facescores_table.png" width = "600"/>
 
+From this table, it can be seen that as the face score improves, the faces become more centered, the face is more distinct from its background and the people in the pictures are looking straight forward. 
+
+After this, second face score was examined using a similar approach. The picture below summarizes the relationship that was observed. 
+
+<img src = "Images/secondfacescores.JPG" width = "600"/>
+It was seen that once second facescores crossed a certain threshold, there was a second face in the picture. This score happenned to be around 3.1. So images that had a second face score greater than 3.1 were removed. 
