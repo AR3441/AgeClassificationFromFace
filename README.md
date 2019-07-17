@@ -12,7 +12,7 @@ For this project, 85,213 images were used to reduce the computational load of th
 
 ### Exporatory Data Analysis 
 
-The biggest question upon seeing the data is understanding the DOB which is in MATLAB datetime format. This needed to be converted back to a normal date time format. This process can be seen in the notebook titled "Data Cleaning + EDA" and understanding what face score and second face score mean. When looking at the face score data, there were about 78,000 images that contained a face score of -inf. Some examples of images with -inf scores can be seen below:
+The biggest question upon first seeing the data is understanding the DOB which is in MATLAB datetime format. This needed to be converted back to a normal date time format. This process can be seen in the notebook titled "Data Cleaning + EDA". The following steps were done in order to better understand the meta data, specifically face score and second face score. When looking at the face score data, there were about 78,000 images that contained a face score of -inf. Some examples of images with -inf scores can be seen below:
 <img src = "Images/picneginf_1.png" width = "200" />
 <img src = "Images/picneginf_2.png" width = "300"/>
 
@@ -26,7 +26,11 @@ After this, second face score was examined using a similar approach. The picture
 
 <img src = "Images/secondfacescores.JPG" width = "600"/>
 
-It was seen that once second facescores crossed a certain threshold, there was a second face in the picture. This score happenned to be around 3.1. So images that had a second face score greater than 3.1 were removed. So after removing these pictures, as well as pictures that had ages that didn't make sense, there were about 381,000 pictures. After removing pictures that were labeled under the age of 10 and older than 70, the pictures were put into bins of age ranges. In order to balance pictures, many pictures had to be removed as well. After this, there were about 86,000 pictures left. 
+It was seen that once second facescores crosses a certain threshold, there is a second face in the picture. This score happenned to be around 3.1. So images that had a second face score greater than 3.1 were removed. So after removing these pictures, as well as pictures that had ages that didn't make sense, there were about 381,000 pictures. The following graph shows the distribution of the labeled ages of the pictures. 
+
+<img src = "Images/ages_distribution.png" width = "600"/>
+
+After removing pictures that were labeled under the age of 10 and older than 70, the pictures were put into bins of age ranges. In order to balance pictures, many pictures had to be removed as well. After this, there were about 86,000 pictures left. 
 
 #### Base CNN Model 
 
