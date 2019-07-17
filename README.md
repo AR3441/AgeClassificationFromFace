@@ -14,8 +14,7 @@ For this project, 85,213 images were used to reduce the computational load of th
 
 The biggest question upon first seeing the data is understanding the DOB which is in MATLAB datetime format. This needed to be converted back to a normal date time format. This process can be seen in the notebook titled "Data Cleaning + EDA". The following steps were done in order to better understand the meta data, specifically face score and second face score. When looking at the face score data, there were about 78,000 images that contained a face score of -inf. Some examples of images with -inf scores can be seen below:
 
-<img src = "Images/picneginf_1.png" width = "200" />
-<img src = "Images/picneginf_2.png" width = "300"/>
+<img src = "Images/picneginf_1.png" width = "200" /> <img src = "Images/picneginf_2.png" width = "300"/>
 
 It is evident from these images, that images with face scores of -inf should be removed since no face image can even be discerned from these pictures. The other face score were in a range between a little less than 1 and 8. To get a better understanding of how the images change as the face scores change, images with different face scores were looked at. So in the table of images below, the first row contains images with face scores between 0 and 1, the second row contains scores between 1 and 2, so on and so forth. 
 
