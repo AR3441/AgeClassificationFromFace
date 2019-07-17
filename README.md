@@ -13,6 +13,7 @@ For this project, 85,213 images were used to reduce the computational load of th
 ### Exporatory Data Analysis 
 
 The biggest question upon first seeing the data is understanding the DOB which is in MATLAB datetime format. This needed to be converted back to a normal date time format. This process can be seen in the notebook titled "Data Cleaning + EDA". The following steps were done in order to better understand the meta data, specifically face score and second face score. When looking at the face score data, there were about 78,000 images that contained a face score of -inf. Some examples of images with -inf scores can be seen below:
+
 <img src = "Images/picneginf_1.png" width = "200" />
 <img src = "Images/picneginf_2.png" width = "300"/>
 
