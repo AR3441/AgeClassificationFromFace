@@ -30,9 +30,11 @@ It was seen that once second facescores crosses a certain threshold, there is a 
 
 <img src = "Images/ages_distribution.png" width = "600"/>
 
-After removing pictures that were labeled under the age of 10 and older than 70, the pictures were put into bins of age ranges. In order to balance pictures, many pictures had to be removed as well. After this, there were about 86,000 pictures left. 
+From the distribution above, it can be seen that there aren't enough images of people younger than 10, and older than 80. These images were removed, afterwhich the pictures were put into bins of age ranges. In order to balance the classes, many ranges had to be downsampled. 
 
 #### Base CNN Model 
 
+There are now 85,565 images left to use for training, validating, and testing the convolutional neural network. Of these pictures, 59,110 images were used for training, 6567 images were used for testing, and 16860 images were used for testing. There was a total of 13 classes. The breakdown of these classes and the number of images in each class can be seen below. 
 
+<img src = "Images/class_breakdown.PNG" width = "200"/>
 
