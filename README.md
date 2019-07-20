@@ -32,7 +32,7 @@ It was seen that once second facescores crosses a certain threshold, there is a 
 
 From the distribution above, it can be seen that there aren't enough images of people younger than 10, and older than 80. These images were removed, afterwhich the pictures were put into bins of age ranges. In order to balance the classes, many ranges had to be downsampled. 
 
-#### Base CNN Model 
+#### CNN Model 
 
 There are now 85,565 images left to use for training, validating, and testing the convolutional neural network. Of these pictures, 59,110 images were used for training, 6567 images were used for testing, and 16860 images were used for testing. There was a total of 13 classes. The breakdown of these classes and the number of images in each class can be seen below. 
 
@@ -42,5 +42,5 @@ For the CNN, transfer learning was used by using VGG-16's convolutional base. VG
 
 <img src = "Images/vgg16.png" width = "600" />
 
-
+The new model will not use the fully connected layers and softmax layers shown in the pictures. Instead it has different fully connected layers and softmax layers that will classify images into 13 age groups. Only these layers are also trained while the previous layers are untrained and are using the weights from when VGG-16 was trained on Image-Net. 
 
