@@ -38,3 +38,9 @@ There are now 85,565 images left to use for training, validating, and testing th
 
 <img src = "Images/class_breakdown.PNG" width = "200"/>
 
+For the CNN, transfer learning was used by using VGG-16's convolutional base. VGG-16 is a famous CNN that was trained on ImageNet which is a dataset of over 14 million images belonging to 1000 classes. The model itself achieved 92.5% accuracy on these images. It originally classified images into 1000 different classes, but in this case the top layers were changes so that it can classify face images into the 13 classes or age groups. The full VGG-16 architecture can be seen below. 
+
+<img src = "Images/vgg16.png" width = "600" />
+
+
+
