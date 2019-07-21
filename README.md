@@ -49,9 +49,15 @@ The model was trained multiple times using different parameters due to one issue
 
 <img src = "Images/train_val_acc.png" width = "500"/>
 
-Ultimately, it was decided to continue training regardless of this issue. It was ultimately trained upto 64% accuracy due to time constraints. The validation and test accuracy were 15% and 16.75% respectively. Once the model was trained, a function was created to predict the three most probable age ranges on new pictures. An example of this can be seen below. More images can be found in the "Improving the Model" jupyter notebook. 
+Ultimately, it was decided to continue training regardless of this issue. It was trained upto 64% accuracy due to time constraints. The validation and test accuracy were 15% and 16.75% respectively. Once the model was trained, a function was created to predict the three most probable age ranges on new pictures. Two examples of the function in use can be seen below. More examples can be found in the "Improving the Model" jupyter notebook. 
 
-<img src = "Images/youngeldebak.png" width = "200" />
+<img src = "Images/youngeldebak.png" width = "200" />  <img src = "Images/alex.png" width = "200" />
+
+###### Future Steps 
+
+There are still many ways to improve this model. The most obvious step would be to use more images for training as well by using more images from the data set, and by using data augmentation(rotating, shifting images). Another way, would be to train some of the convolutional layers and not just the fully connected layers. Finally, another important step is figuring out what is causing the validation accuracy to stagnate. 
+
+
 
 
 
