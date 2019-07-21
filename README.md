@@ -10,7 +10,7 @@ For this project, 85,213 images were used to reduce the computational load of th
 <img src="Images/MetaData.png" width = "600"/>
 
 
-### Exporatory Data Analysis 
+## Exporatory Data Analysis 
 
 The biggest question upon first seeing the data is understanding the DOB which is in MATLAB datetime format. This needed to be converted back to a normal date time format. This process can be seen in the notebook titled "Data Cleaning + EDA". The following steps were done in order to better understand the meta data, specifically face score and second face score. When looking at the face score data, there were about 78,000 images that contained a face score of -inf. Some examples of images with -inf scores can be seen below:
 
@@ -32,7 +32,7 @@ It was seen that once second facescores crosses a certain threshold, there is a 
 
 From the distribution above, it can be seen that there aren't enough images of people younger than 10, and older than 80. These images were removed, afterwhich the pictures were put into bins of age ranges. In order to balance the classes, many ranges had to be downsampled. 
 
-#### CNN Model 
+## CNN Model 
 
 There are now 85,565 images left to use for training, validating, and testing the convolutional neural network. Of these pictures, 59,110 images were used for training, 6567 images were used for testing, and 16860 images were used for testing. There was a total of 13 classes. The breakdown of these classes and the number of images in each class can be seen below. 
 
@@ -44,7 +44,7 @@ For the CNN, transfer learning was used by using VGG-16's convolutional base. VG
 
 The new model will not use the fully connected layers and softmax layers shown in the pictures. Instead it has different fully connected layers and softmax layers that will classify images into 13 age groups. Only these layers are also trained while the previous layers are untrained and are using the weights from when VGG-16 was trained on Image-Net. The newly added layers can be seen in the jupyter notebook titled "Improving the Model."
 
-##### Results 
+## Results 
 The model was trained multiple times using different parameters due to one issue where the training accuracy improved while the validation accuracy did not change at all. This occured regardless of the parameters that were used. 
 
 <img src = "Images/train_val_acc.png" width = "500"/>
@@ -53,7 +53,7 @@ Ultimately, it was decided to continue training regardless of this issue. It was
 
 <img src = "Images/youngeldebak.png" width = "200" />  <img src = "Images/alex.png" width = "200" />
 
-###### Future Steps 
+## Future Steps 
 
 There are still many ways to improve this model. The most obvious step would be to use more images for training as well by using more images from the data set, and by using data augmentation(rotating, shifting images). Another way, would be to train some of the convolutional layers and not just the fully connected layers. Finally, another important step is figuring out what is causing the validation accuracy to stagnate. 
 
