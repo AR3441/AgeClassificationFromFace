@@ -42,5 +42,16 @@ For the CNN, transfer learning was used by using VGG-16's convolutional base. VG
 
 <img src = "Images/vgg16.png" width = "600" />
 
-The new model will not use the fully connected layers and softmax layers shown in the pictures. Instead it has different fully connected layers and softmax layers that will classify images into 13 age groups. Only these layers are also trained while the previous layers are untrained and are using the weights from when VGG-16 was trained on Image-Net. 
+The new model will not use the fully connected layers and softmax layers shown in the pictures. Instead it has different fully connected layers and softmax layers that will classify images into 13 age groups. Only these layers are also trained while the previous layers are untrained and are using the weights from when VGG-16 was trained on Image-Net. The newly added layers can be seen in the jupyter notebook titled "Improving the Model."
+
+##### Results 
+The model was trained multiple times using different parameters due to one issue where the training accuracy improved while the validation accuracy did not change at all. This occured regardless of the parameters that were used. 
+
+<img src = "Images/train_val_acc.png" width = "500"/>
+
+Ultimately, it was decided to continue training regardless of this issue. It was ultimately trained upto 64% accuracy due to time constraints. The validation and test accuracy were 15% and 16.75% respectively. Once the model was trained, a function was created to predict the three most probable age ranges on new pictures. An example of this can be seen below. More images can be found in the "Improving the Model" jupyter notebook. 
+
+<img src = "Images/youngeldebak.png" width = "200" />
+
+
 
