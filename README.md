@@ -55,7 +55,7 @@ Ultimately, it was decided to continue training regardless of this issue. It was
 
 ## Future Steps 
 
-There are still many ways to improve this model. The most obvious step would be to use more images for training as well by using more images from the data set, and by using data augmentation(rotating, shifting images). Another way, would be to train some of the convolutional layers and not just the fully connected layers. Finally, another important step is figuring out what is causing the validation accuracy to stagnate. 
+There are still many ways to improve this model. The most obvious step would be to use more images for training as well by using more images from the data set. Using data augmentation(rotating, shifting images) would also greatly increase the number of training data available. Another way, would be to train some of the convolutional layers and not just the fully connected layers. Another important step is figuring out what is causing the validation accuracy to stagnate. Finally, utilizing cloud GPUs might allow the process to get faster. 
 
 
 
